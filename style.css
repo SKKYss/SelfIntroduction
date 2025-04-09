@@ -1,0 +1,607 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+header {
+  background-color: rgba(255, 255, 255, 0.8);
+  height: 7vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+header ul {
+  position: absolute;
+  top: 0;
+  line-height: 180px;
+  right: 1vw;
+}
+h1 {
+  color: rgb(11, 11, 11);
+  position: absolute;
+  top: 2vh;
+  left: 8vw;
+  line-height: 80px;
+  width: 100%;
+  font-size: 60px;
+}
+
+.Mysymbol {
+  width: 200px;
+  height: 200px;
+  margin-top: 0.1vh;
+  margin-left: 1.5vw;
+}
+
+header li {
+  display: inline;
+  margin-right: 4vw;
+}
+li img {
+  width: 100px;
+  height: 100px;
+  margin-top: 1.6vh;
+  margin-left: 1.5vw;
+}
+li img:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+}
+
+.hover-text {
+  display: none; /* 默认隐藏文本 */
+  position: absolute; /* 绝对定位文本 */
+  left: 50%; /* 水平居中对齐，结合transform */
+  transform: translateX(-50%); /* 调整文本以居中 */
+  top: 100%; /* 设置文本在图片下方 */
+  background-color: rgba(255, 252, 252, 0.7); /* 背景颜色 */
+  color: rgb(20, 203, 253); /* 字体颜色 */
+  padding: 5px; /* 内边距 */
+  border-radius: 5px; /* 圆角样式 */
+  width: 500px;
+  height: 500px;
+  font-size: 50px;
+  font-weight: bold; /* 使字体加粗 */
+}
+
+.hover-img {
+  display: none; /* 默认隐藏文本 */
+  position: absolute; /* 绝对定位文本 */
+  left: 50%; /* 水平居中对齐，结合transform */
+  transform: translateX(-50%); /* 调整文本以居中 */
+  top: 100%; /* 设置文本在图片下方 */
+  background-color: rgba(255, 252, 252, 0.7); /* 背景颜色 */
+  padding: 5px; /* 内边距 */
+  border-radius: 5px; /* 圆角样式 */
+  width: 600px;
+  height: 720px;
+  background-image: url(images/wechat.jpg);
+  background-size: cover; /* 背景图缩放以覆盖整个块 */
+  background-position: center; /* 背景图居中显示 */
+}
+li:hover .hover-text {
+  display: block; /* 鼠标悬停时显示文本 */
+}
+
+li:hover .hover-img {
+  display: block; /* 鼠标悬停时显示文本 */
+}
+.motto {
+  color: white;
+  height: 100vh;
+  min-height: 100vh;
+  background-image: url(images/主页2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.box {
+  position: absolute;
+  bottom: 20vh;
+  width: 5vw;
+  height: 10vh;
+  margin-bottom: 1px;
+  display: flex;
+  align-items: center;
+  vertical-align: bottom;
+  transform-style: preserve-3d;
+  animation: rotate 20s linear infinite;
+}
+
+/*轮播图*/
+:root {
+  --iwidth: 1000px;
+  --iheight: 800px;
+  --iwidth2: 2000px;
+  --iheight2: 1500px;
+}
+#Img {
+  width: var(--iwidth);
+  height: var(--iheight);
+  border-radius: 10px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: relative;
+  margin-top: 60vh;
+  margin-right: 70vw;
+}
+#main {
+  display: flex;
+  position: absolute;
+  left: 0;
+  gap: 5px;
+}
+#main div {
+  width: var(--iwidth);
+  height: var(--iheight);
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px 5px rgba(247, 43, 43, 0.7);
+  flex-shrink: 0;
+  background-size: cover;
+}
+#img1 {
+  background: url(images/10.获奖证明/10.2024-12-APMC亚太数学建模.jpg);
+}
+#img2 {
+  background: url(images/10.获奖证明/5.2023-12-山东数学竞赛.jpg);
+}
+#img3 {
+  background: url(images/10.获奖证明/2.2023-12-全国数学竞赛.jpg);
+}
+#img4 {
+  background: url(images/10.获奖证明/8.2024-11-数学建模赛区一等.jpg);
+}
+#img5 {
+  background: url(images/10.获奖证明/1.2023-6-C语言程序设计.jpg);
+}
+/*图片放大*/
+#img1 {
+  transition: transform 0.5s ease; /* 调整时间和过渡效果 */
+}
+#img2 {
+  transition: transform 0.5s ease; /* 调整时间和过渡效果 */
+}
+#img3 {
+  transition: transform 0.5s ease; /* 调整时间和过渡效果 */
+}
+#img4 {
+  transition: transform 0.5s ease; /* 调整时间和过渡效果 */
+}
+#img5 {
+  transition: transform 0.5s ease; /* 调整时间和过渡效果 */
+}
+#img1:hover {
+  transform: scale(1.5);
+}
+#img2:hover {
+  transform: scale(1.5);
+}
+#img3:hover {
+  transform: scale(1.5);
+}
+#img4:hover {
+  transform: scale(1.5);
+}
+#img5:hover {
+  transform: scale(1.5);
+}
+/*标语*/
+.slogan {
+  background-color: #485652;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+.slogan h2 {
+  font-size: 60px;
+}
+
+/*作品1*/
+.Work1 {
+  display: flex;
+  background-color: #dddddd;
+}
+
+.Work1 img {
+  width: 15vw;
+  height: auto; /* 保持纵横比 */
+  margin: 0 5vw;
+}
+
+.info1 {
+  position: absolute; /* 设置文本为绝对定位 */
+  top: 20vh; /* 文本距离顶部的距离 */
+  left: 40vw; /* 文本距离左侧的距离 */
+  color: rgb(7, 7, 0); /* 文本颜色 */
+  background-color: rgba(248, 246, 246, 0); /* 半透明背景 */
+
+  display: flex; /* 将子元素作为 flex 容器的子项 */
+  flex-direction: column; /* 垂直排列子元素（如有多个） */
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+  height: 100px; /* 定义父元素的高度以帮助垂直居中 */
+  width: 1000px; /* 定义父元素的宽度以帮助水平居中 */
+}
+
+.info1 h3 {
+  font-size: 50px;
+}
+
+.info1 p {
+  font-size: 40px;
+  margin-top: 2.5vh;
+}
+.info1 a {
+  color: blue;
+  text-decoration: none;
+  border: 5px solid rgb(34, 179, 80);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+/*作品2*/
+.Work2 {
+  display: flex;
+  background-color: #dddddd;
+}
+.Work2 img {
+  width: 22vw; /* 或其他任何适当的像素值 */
+  height: auto; /* 保持纵横比 */
+  margin: 0 2vw;
+}
+.info2 {
+  position: absolute; /* 设置文本为绝对定位 */
+  top: 15vh; /* 文本距离顶部的距离 */
+  left: 40vw; /* 文本距离左侧的距离 */
+  color: rgb(7, 7, 0); /* 文本颜色 */
+  background-color: rgba(248, 246, 246, 0); /* 半透明背景 */
+
+  display: flex; /* 将子元素作为 flex 容器的子项 */
+  flex-direction: column; /* 垂直排列子元素（如有多个） */
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+  height: 100px; /* 定义父元素的高度以帮助垂直居中 */
+  width: 1000px; /* 定义父元素的宽度以帮助水平居中 */
+}
+
+.info2 h3 {
+  font-size: 50px;
+}
+
+.info2 p {
+  font-size: 40px;
+  margin-top: 2.5vh;
+}
+.info2 a {
+  color: blue;
+  text-decoration: none;
+  border: 5px solid rgb(34, 179, 80);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+/*作品3*/
+.Work3 {
+  display: flex;
+  background-color: #dddddd;
+}
+.Work3 img {
+  width: 22vw; /* 或其他任何适当的像素值 */
+  height: auto; /* 保持纵横比 */
+  margin: 0 1.95vw;
+}
+.info3 {
+  position: absolute; /* 设置文本为绝对定位 */
+  top: 15vh; /* 文本距离顶部的距离 */
+  left: 40vw; /* 文本距离左侧的距离 */
+  color: rgb(7, 7, 0); /* 文本颜色 */
+  background-color: rgba(248, 246, 246, 0); /* 半透明背景 */
+
+  display: flex; /* 将子元素作为 flex 容器的子项 */
+  flex-direction: column; /* 垂直排列子元素（如有多个） */
+  justify-content: center; /* 垂直居中 */
+  align-items: center; /* 水平居中 */
+  height: 100px; /* 定义父元素的高度以帮助垂直居中 */
+  width: 1000px; /* 定义父元素的宽度以帮助水平居中 */
+}
+.info3 h3 {
+  font-size: 50px;
+}
+
+.info3 p {
+  font-size: 40px;
+  margin-top: 2.5vh;
+}
+.info3 a {
+  color: blue;
+  text-decoration: none;
+  border: 5px solid rgb(34, 179, 80);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.slogan {
+  background-color: #485652;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+.slogan h2 {
+  font-size: 60px;
+}
+
+/*数模*/
+.Works {
+  background: url(images/个人照/数学建模1.jpg);
+  background-size: contain;
+}
+
+/*按钮*/
+#mask {
+  width: var(--iwidth2);
+  height: var(--iheight2);
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+}
+#mask div {
+  width: 25%;
+  height: 100%;
+  z-index: 1000;
+}
+.button {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: rgba(56, 17, 17, 0.5);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  color: rgba(255, 252, 252, 0.7);
+  font-size: 100px;
+  font-weight: bold;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(135px, -50%);
+  visibility: hidden;
+}
+#l_mask:hover .button,
+#r_mask:hover .button {
+  visibility: visible;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/*数模轮播图2*/
+#Img2 {
+  width: var(--iwidth2);
+  height: var(--iheight2);
+  border-radius: 30px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  position: relative;
+  margin-top: 0vh;
+  margin-left: 34vw;
+}
+#main2 {
+  display: flex;
+  position: absolute;
+  left: 0;
+  gap: 10px;
+}
+#main2 div {
+  width: var(--iwidth2);
+  height: var(--iheight2);
+  border-radius: 10px;
+  flex-shrink: 0;
+  background-size: cover;
+}
+#img6 {
+  background: url(images/数学建模/picture2.png);
+}
+#img7 {
+  background: url(images/数学建模/picture3.png);
+}
+#img8 {
+  background: url(images/数学建模/高温作业服.png);
+}
+#img9 {
+  background: url(images/数学建模/各时刻位置3.png);
+}
+#img10 {
+  background: url(images/数学建模/国赛A.png);
+}
+#img11 {
+  background: url(images/数学建模/美赛-流程图.png);
+}
+
+.slogan {
+  background-color: #485652;
+  color: white;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  line-height: 1.8em;
+}
+
+.slogan h2 {
+  font-size: 60px;
+}
+/*单片机视频1*/
+.Video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: azure;
+}
+.info4 {
+  margin: 100px 0;
+  font-size: 50px;
+  color: rgb(47, 255, 0);
+}
+#video1 {
+  width: 90%;
+  height: 80%;
+  background-image: url(images/单片机11.png);
+}
+
+.Video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
+}
+/*单片机视频2*/
+#video2 {
+  width: 90%;
+  height: 80%;
+  background-image: url(images/单片机22.png);
+}
+
+.Video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
+}
+/*单片机视频3*/
+#video3 {
+  width: 90%;
+  height: 80%;
+  background-image: url(images/单片机33.png);
+}
+
+.Video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
+}
+/*单片机视频4*/
+#video4 {
+  width: 90%;
+  height: 80%;
+  background-image: url(images/单片机44.png);
+}
+
+.Video video {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.7);
+}
+#last_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-color: azure;
+}
+
+/*最后*/
+#last_info h3 {
+  font-size: 60px;
+}
+#last_info p {
+  font-size: 50px;
+}
+
+/*页脚设置*/
+footer {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  height: 100px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}
+/*响应式设计*/
+@media screen and (max-width: 768px) {
+  header ul {
+    display: none;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .motto h2 {
+    font-size: 40px;
+  }
+  .Work1 {
+    flex-direction: column;
+  }
+  .Work1 img {
+    width: 100%;
+  }
+  .info1 {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .info1 h3 {
+    font-size: 30px;
+  }
+
+  .Work2 {
+    flex-direction: column;
+  }
+  .Work2 img {
+    width: 100%;
+  }
+  .info2 {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .info2 h3 {
+    font-size: 30px;
+  }
+
+  .Work3 {
+    flex-direction: column;
+  }
+  .Work3 img {
+    width: 100%;
+  }
+  .info3 {
+    width: 100%;
+    padding: 40px 0;
+  }
+  .info3 h3 {
+    font-size: 30px;
+  }
+}
+
+/* 新增的样式 */
+section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible-down {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section.visible-up {
+  opacity: 1;
+  transform: translateY(-50px); /* 向上滚动时的效果 */
+}
