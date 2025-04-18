@@ -47,27 +47,24 @@ li img:hover {
   transform: scale(1.5);
   cursor: pointer;
 }
-
-.hover-text {
-  display: none; /* 默认隐藏文本 */
-  position: absolute; /* 绝对定位文本 */
-  left: 50%; /* 水平居中对齐，结合transform */
-  transform: translateX(-50%); /* 调整文本以居中 */
-  top: 100%; /* 设置文本在图片下方 */
-  background-color: rgba(255, 252, 252, 0.7); /* 背景颜色 */
-  color: rgb(20, 203, 253); /* 字体颜色 */
-  padding: 5px; /* 内边距 */
-  border-radius: 5px; /* 圆角样式 */
-  width: 180px;
-  height: 110px;
-  font-size: 15px;
-  font-weight: bold; /* 使字体加粗 */
+/*指示箭头*/
+#right-arrow {
+  position: absolute;
+  right: 350px; /* 调整箭头的位置 */
+  top: 8px; /* 调整箭头的位置 */
+  font-size: 28px; /* 箭头的大小 */
+  color: red; /* 箭头的颜色 */
+  display: none; /* 默认隐藏 */
+  animation: arrow-bounce 0.5s infinite; /* 应用动画 */
 }
 
+.hidden {
+  display: none; /* 隐藏类 */
+}
 .hover-img {
   display: none; /* 默认隐藏文本 */
   position: absolute; /* 绝对定位文本 */
-  left: 50%; /* 水平居中对齐，结合transform */
+  left: 10%; /* 水平居中对齐，结合transform */
   transform: translateX(-50%); /* 调整文本以居中 */
   top: 100%; /* 设置文本在图片下方 */
   background-color: rgba(255, 252, 252, 0.7); /* 背景颜色 */
@@ -79,10 +76,43 @@ li img:hover {
   background-size: cover; /* 背景图缩放以覆盖整个块 */
   background-position: center; /* 背景图居中显示 */
 }
-li:hover .hover-text {
-  display: block; /* 鼠标悬停时显示文本 */
+.hover-text1 {
+  display: none; /* 默认隐藏文本 */
+  position: absolute; /* 绝对定位文本 */
+  left: 50%; /* 水平居中对齐，结合transform */
+  transform: translateX(-50%); /* 调整文本以居中 */
+  top: 100%; /* 设置文本在图片下方 */
+  background-color: rgba(255, 252, 252, 0.7); /* 背景颜色 */
+  color: rgb(0, 0, 0); /* 字体颜色 */
+  padding: 5px; /* 内边距 */
+  border-radius: 5px; /* 圆角样式 */
+  width: 140px;
+  height: 110px;
+  font-size: 15px;
+  font-weight: bold; /* 使字体加粗 */
+}
+.hover-text2 {
+  display: none; /* 默认隐藏文本 */
+  position: absolute; /* 绝对定位文本 */
+  left: 80%; /* 水平居中对齐，结合transform */
+  transform: translateX(-50%); /* 调整文本以居中 */
+  top: 100%; /* 设置文本在图片下方 */
+  background-color: rgba(255, 252, 252, 0.7); /* 背景颜色 */
+  color: rgb(0, 0, 0); /* 字体颜色 */
+  padding: 5px; /* 内边距 */
+  border-radius: 5px; /* 圆角样式 */
+  width: 140px;
+  height: 110px;
+  font-size: 15px;
+  font-weight: bold; /* 使字体加粗 */
 }
 
+li:hover .hover-text1 {
+  display: block; /* 鼠标悬停时显示文本 */
+}
+li:hover .hover-text2 {
+  display: block; /* 鼠标悬停时显示文本 */
+}
 li:hover .hover-img {
   display: block; /* 鼠标悬停时显示文本 */
 }
@@ -90,7 +120,7 @@ li:hover .hover-img {
   color: white;
   height: 100vh;
   min-height: 100vh;
-  background-image: url(images/主页2.jpg);
+  background-image: url(https://img.picui.cn/free/2025/04/18/6801f567e016d.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -120,30 +150,30 @@ li:hover .hover-img {
   display: flex;
   position: absolute;
   left: 0;
-  gap: 5px;
+  gap: 2px;
 }
 #main div {
   width: var(--iwidth);
   height: var(--iheight);
   border-radius: 10px;
-  box-shadow: 15px 15px 15px 5px rgba(247, 43, 43, 0.5);
+  box-shadow: 15px 15px 15px 4px rgba(247, 43, 43, 0.5);
   flex-shrink: 0;
   background-size: cover;
 }
 #img1 {
-  background: url(images/10.获奖证明/10.2024-12-APMC亚太数学建模.jpg);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f640706a1.jpg);
 }
 #img2 {
-  background: url(images/10.获奖证明/5.2023-12-山东数学竞赛.jpg);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f641d2af1.jpg);
 }
 #img3 {
-  background: url(images/10.获奖证明/2.2023-12-全国数学竞赛.jpg);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f641a8dee.jpg);
 }
 #img4 {
-  background: url(images/10.获奖证明/8.2024-11-数学建模赛区一等.jpg);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f6405c66d.jpg);
 }
 #img5 {
-  background: url(images/10.获奖证明/1.2023-6-C语言程序设计.jpg);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f640c7f9a.jpg);
 }
 /*图片放大*/
 #img1 {
@@ -241,9 +271,9 @@ li:hover .hover-img {
 }
 
 .Work2 img {
-  width: 15vw;
+  width: 20vw;
   height: auto; /* 保持纵横比 */
-  margin: 0 5vw;
+  margin: 0 2.5vw;
 }
 
 .info2 {
@@ -284,9 +314,9 @@ li:hover .hover-img {
 }
 
 .Work3 img {
-  width: 15vw;
+  width: 20vw;
   height: auto; /* 保持纵横比 */
-  margin: 0 5vw;
+  margin: 0 2.5vw;
 }
 
 .info3 {
@@ -321,7 +351,7 @@ li:hover .hover-img {
 }
 /*数模*/
 .Works {
-  background: url(images/个人照/数学建模1.jpg);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f6eea8b6c.jpg);
   background-size: contain;
   width: 100%;
   height: 50%;
@@ -379,32 +409,33 @@ li:hover .hover-img {
   display: flex;
   position: absolute;
   left: 0;
-  gap: 10px;
+  gap: 2px;
 }
 #main2 div {
   width: var(--iwidth2);
   height: var(--iheight2);
   border-radius: 10px;
+  box-shadow: 15px 15px 15px 4px rgba(247, 43, 43, 0.5);
   flex-shrink: 0;
   background-size: cover;
 }
 #img6 {
-  background: url(images/数学建模/picture2.png);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f775e35b2.png);
 }
 #img7 {
-  background: url(images/数学建模/picture3.png);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f77da4c1d.png);
 }
 #img8 {
-  background: url(images/数学建模/高温作业服.png);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f76a99c78.png);
 }
 #img9 {
-  background: url(images/数学建模/各时刻位置3.png);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f77385c54.png);
 }
 #img10 {
-  background: url(images/数学建模/国赛A.png);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f7774df7c.png);
 }
 #img11 {
-  background: url(images/数学建模/美赛-流程图.png);
+  background: url(https://img.picui.cn/free/2025/04/18/6801f76d51de5.png);
 }
 
 /*单片机视频1*/
@@ -424,7 +455,7 @@ li:hover .hover-img {
 #video1 {
   width: 80%;
   height: 70%;
-  background-image: url(images/1.png);
+  background-image: url(images/单片机1.png);
 }
 
 .Video video {
@@ -568,4 +599,15 @@ section.visible-down {
 section.visible-up {
   opacity: 1;
   transform: translateY(-50px); /* 向上滚动时的效果 */
+}
+
+/* 添加箭头的动画效果 */
+@keyframes arrow-bounce {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(5px); /* 向右移动5px */
+  }
 }

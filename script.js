@@ -66,6 +66,15 @@ window.addEventListener("scroll", function () {
     }
   });
 
+  // 检测是否滑动到最后一页
+  if (scrollTop + window.innerHeight >= document.body.offsetHeight) {
+    const arrow = document.getElementById("right-arrow");
+    arrow.style.display = "block"; // 显示箭头
+    arrow.classList.remove("hidden"); // 移除隐藏类
+  } else {
+    document.getElementById("right-arrow").style.display = "none"; // 隐藏箭头
+  }
+
   lastScrollTop = scrollTop; // 更新上一次滚动的位置
 });
 
